@@ -11,11 +11,11 @@
   */
 
 module SourceSelectionControl(input reset,                //system reset
-		                      input clk,                  //system clock
-			                  input select,               //selection jumper, high as default duo to internal weak pull-up
-			                  output reg selectionresult, //slection result after removing vibration
+		              input clk,                  //system clock
+			      input select,               //selection jumper, high as default duo to internal weak pull-up
+			      output reg selectionresult, //slection result after removing vibration
                               output reg selectionchanged //changed flag, 65536 clock signal width to indicate selection has just been changed
-			                  );
+			      );
 reg[15:0] counter;           //count the mclk to run state machin at very low speed
 
 //run 16bit counter,the max time for for 49.1520 clk is 65535/49.1520M=1.33ms

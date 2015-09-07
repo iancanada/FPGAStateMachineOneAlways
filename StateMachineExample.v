@@ -75,7 +75,7 @@ begin
 		    end   		
 	   endcase
      end
-     else begin                               //keep everything no change for all other moment counter!=0
+     else begin                               //keep everything no change for all other moment when counter!=0
 	   state<=state;
 	   selectionresult<=selectionresult;
 	   selectionchanged<=selectionchanged;

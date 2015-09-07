@@ -20,7 +20,7 @@ module SourceSelectionControl(input reset,                //system reset
 			      );
 reg[15:0] counter;           //count the mclk to run state machin at very low speed
 
-//run 16bit counter,the max loop time for for 49.1520MHz clk is 65535/49.1520M=1.33ms
+//run 16bit counter,the max loop time for a 49.1520MHz clk is 65535/49.1520M=1.33ms
 always@(posedge clk or negedge reset)
 begin
   if(!reset)

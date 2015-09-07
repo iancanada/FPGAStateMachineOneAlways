@@ -50,8 +50,8 @@ begin
 	   case(state)
 		  BEGIN: begin
 		    selectionresult<=selectionresult;  //keep selection result no change 
-		    selectionchanged<=1;               //indicate slection changed to perform frontend reset, 1 only in here, in all other states is 0
-		    state<=select? SELECT1:SELECT0;    //next state decided by select input
+		    selectionchanged<=1;               //set to 1 in this state
+		    state<=select? SELECT1:SELECT0;    //next state will be decided by select input
 		    end
                   SELECT1: begin
 		    selectionresult<=1;
@@ -75,7 +75,7 @@ begin
 		    end   		
 	   endcase
      end
-     else begin                               //keep everything no change for all other moment when counter!=0
+     else begin                                        //keep everything no change for all other moment when counter!=0
 	   state<=state;
 	   selectionresult<=selectionresult;
 	   selectionchanged<=selectionchanged;

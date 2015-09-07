@@ -41,12 +41,12 @@ parameter[4:0] BEGIN   =0,
 always@(posedge clk or negedge reset)
 begin
   if(!reset) begin
-    selectionresult<=0;                      //power up default is 0
-    selectionchanged<=0;                     //power up default is 0
+    selectionresult<=0;                                //power up default is 0
+    selectionchanged<=0;                               //power up default is 0
     state<=BEGIN;
   end
   else begin
-    if(counter==0) begin                     //run state machine at moment of each time counter==0
+    if(counter==0) begin                               //run state machine just at moment of counter==0
 	   case(state)
 		  BEGIN: begin
 		    selectionresult<=selectionresult;  //keep selection result no change 

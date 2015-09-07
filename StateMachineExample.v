@@ -4,7 +4,7 @@
   * Date of create     : 2015-04-11
   * Author             : Ian Jin  
   * Description        : good example of one segment state macchine (FSM)
-  *                      with intexed code
+  *                      with intexed coding
   ******************************************************************************
   *
   * COPYRIGHT(c) Ian Jin
@@ -27,7 +27,7 @@ begin
     counter<=counter+16'd1;
 end
 
-//FSM in one always style with indexed code
+//FSM in one always style with indexed coding
 reg[4:0] state;
 parameter[4:0] BEGIN   =0,
                SELECT1 =1,

@@ -12,13 +12,13 @@
   * COPYRIGHT(c) Ian Jin All rights reserved
   */
   
-module SourceSelectionControl(input reset,                //system reset
-		              input clk,                  //system clock
-			      input select,               //selection jumper, high as default duo to internal weak pull-up
-			      output reg selectionresult, //slection result after removing vibration
-                              output reg selectionchanged //changed flag, 65536 clock signal width to indicate selection has just been changed
-			      );
-reg[15:0] counter;           //count the mclk to run state machin at very low speed
+module SourceSelection(input reset,                //system reset
+		       input clk,                  //system clock
+		       input select,               //selection jumper, high as default duo to internal weak pull-up
+		       output reg selectionresult, //slection result after removing vibration
+                       output reg selectionchanged //changed flag, 65536 clock signal width to indicate selection has just been changed
+		       );
+reg[15:0] counter;                                 //count the mclk to run state machin at very low speed
 
 //run 16bit counter,the max loop time for a 49.1520MHz clk is 65535/49.1520M=1.33ms
 always@(posedge clk or negedge reset)

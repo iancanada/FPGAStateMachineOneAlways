@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * File Name          : SourceSelectionControl.v
+  * File Name          : StateMachineExample.v
   * Date of create     : 2015-04-11
   * Author             : Ian Jin  
   *                    : iancanada.mail@gmail.com

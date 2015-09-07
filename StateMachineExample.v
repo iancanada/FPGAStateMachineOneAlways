@@ -16,7 +16,7 @@ module SourceSelection(input reset,                //system reset
 		       input clk,                  //system clock
 		       input select,               //selection jumper, high as default duo to internal weak pull-up
 		       output reg selectionresult, //slection result after removing vibration
-                       output reg selectionchanged //changed flag, 65536 clock signal width to indicate selection has just been changed
+                       output reg selectionchanged //changed flag, 65536 clocks width indicating selection has just been changed
 		       );
 reg[15:0] counter;                                 //count the mclk to run state machin at very low speed
 

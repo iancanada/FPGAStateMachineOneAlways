@@ -3,6 +3,8 @@
   * File Name          : SourceSelectionControl.v
   * Date of create     : 2015-04-11
   * Author             : Ian Jin  
+  *                    : iancanada.mail@gmail.com
+  *                    : Twitter: @iancanadaTT
   * Description        : good example of one segment state macchine (FSM)
   *                      with intexed coding
   ******************************************************************************

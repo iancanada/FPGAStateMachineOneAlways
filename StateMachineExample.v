@@ -74,12 +74,12 @@ begin
 		    state<=select? BEGIN:SELECT0;		  		  
 		    end   		
 	   endcase
-	 end
-	 else begin                               //keep everything no change for all other moment counter!=0
+     end
+     else begin                               //keep everything no change for all other moment counter!=0
 	   state<=state;
 	   selectionresult<=selectionresult;
 	   selectionchanged<=selectionchanged;
-         end
+     end
   end
 end	
 								  

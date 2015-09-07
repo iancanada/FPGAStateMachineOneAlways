@@ -31,9 +31,9 @@ end
 reg[4:0] state;
 parameter[4:0] BEGIN   =0,
                SELECT1 =1,
-	           CHANGE1 =2,
-	           SELECT0 =3,
-	           CHANGE0 =4;
+	       CHANGE1 =2,
+	       SELECT0 =3,
+	       CHANGE0 =4;
 
 //FSM in one always style with indexed code
 always@(posedge clk or negedge reset)

@@ -7,6 +7,7 @@
   *                    : Twitter: @iancanadaTT
   * Description        : Good example of FPGA state macchine (FSM) in one always style
   *                      with intexed coding
+  *                      IEEE Standard Verilog Std 1364-2001
   **************************************************************************************
   * COPYRIGHT(c) Ian Jin
   */

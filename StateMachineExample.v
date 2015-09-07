@@ -11,7 +11,7 @@
   **************************************************************************************
   * COPYRIGHT(c) Ian Jin
   */
-
+  
 module SourceSelectionControl(input reset,                //system reset
 		              input clk,                  //system clock
 			      input select,               //selection jumper, high as default duo to internal weak pull-up

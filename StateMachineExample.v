@@ -48,36 +48,36 @@ begin
 	   case(state)
 		  BEGIN: begin
 		    selectionresult<=selectionresult;  //keep selection result no change 
-			selectionchanged<=1;               //indicate slection changed to perform frontend reset, 1 only in here, in all other states is 0
+		    selectionchanged<=1;               //indicate slection changed to perform frontend reset, 1 only in here, in all other states is 0
 		    state<=select? SELECT1:SELECT0;    //next state decided by select input
 		    end
-        SELECT1: begin
+                  SELECT1: begin
 		    selectionresult<=1;
-			 selectionchanged<=0;
+	            selectionchanged<=0;
 		    state<=select? SELECT1:CHANGE1;
 		    end
-        CHANGE1: begin
+                  CHANGE1: begin
 		    selectionresult<=1;
-			 selectionchanged<=0;
+	            selectionchanged<=0;
 		    state<=select? SELECT1:BEGIN;		  
 		    end
-        SELECT0: begin
+                  SELECT0: begin
 		    selectionresult<=0;
-			 selectionchanged<=0;
+		    selectionchanged<=0;
 		    state<=select? CHANGE0:SELECT0;		  
 		    end
-        CHANGE0: begin
+                  CHANGE0: begin
 		    selectionresult<=0;
-			 selectionchanged<=0;
+		    selectionchanged<=0;
 		    state<=select? BEGIN:SELECT0;		  		  
 		    end   		
 	   endcase
 	 end
 	 else begin                               //keep everything no change for all other moment counter!=0
 	   state<=state;
-		selectionresult<=selectionresult;
-		selectionchanged<=selectionchanged;
-    end
+	   selectionresult<=selectionresult;
+	   selectionchanged<=selectionchanged;
+         end
   end
 end	
 								  

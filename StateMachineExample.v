@@ -9,7 +9,7 @@
   *                      with intexed coding
   *                      IEEE Standard Verilog Std 1364-2001
   **************************************************************************************
-  * COPYRIGHT(c) Ian Jin
+  * COPYRIGHT(c) Ian Jin All rights reserved
   */
   
 module SourceSelectionControl(input reset,                //system reset

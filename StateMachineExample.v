@@ -1,14 +1,13 @@
 /**
-  ******************************************************************************
+  **************************************************************************************
   * File Name          : StateMachineExample.v
   * Date of create     : 2015-04-11
   * Author             : Ian Jin  
   *                    : iancanada.mail@gmail.com
   *                    : Twitter: @iancanadaTT
-  * Description        : good example of one segment state macchine (FSM)
+  * Description        : Good example of FPGA state macchine (FSM) in one always style
   *                      with intexed coding
-  ******************************************************************************
-  *
+  **************************************************************************************
   * COPYRIGHT(c) Ian Jin
   */
 

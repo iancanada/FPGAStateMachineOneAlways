@@ -29,7 +29,7 @@ begin
     counter<=counter+16'd1;
 end
 
-//FSM in one always style with indexed coding
+//FSM in one always style with indexed states coding
 reg[4:0] state;
 parameter[4:0] BEGIN   =0,
                SELECT1 =1,
